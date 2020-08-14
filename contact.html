@@ -1,0 +1,131 @@
+<!--siamand zandi 104454178-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title> WEB222 siamand zandi </title>
+        <meta charset="UTF-8" />
+        <link rel='stylesheet' href='csstyles.css' />
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Playfair+Display&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
+    </head>
+
+<body>
+
+    <header>
+        <div id="banner">
+            <a href="index.html" id="logoLink">
+                <img id="logo" src="image\logo.JPG"alt="Toast Logo">
+            </a>
+
+            <div class="navbar" id="navWrapper">
+            <nav>
+                <ul id="nav">
+                    <li><a href="index.html" class="navfontstyle">HOME</a></li>
+                    <li><a href="reflection.html" class="navfontstyle">REFLECTION</a></li>
+                    <li><a href="contact.html" class="navfontstyle">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+        <aside>
+                <div class="side">
+            
+                    <ul>
+                        <li><a href="index.html">Main menu</a></li><br>
+                        <li><a href="basic.html">Basic</a></li><br>
+                        <li><a href="premium.html">premium</a></li><br>
+                        <li><a href="exotic.html">exotic</a></li><br>
+                    </ul>
+    
+            </aside>
+    </header>
+    
+    <div class="title">
+        <p class="category">
+            CONTACT US
+        </p>
+        <hr class="Line">
+    </div>
+  <div class="input">
+    <form action="https://httpbin.org/post" method="post">
+    
+      <div class="inputbox">
+          <input class="inputboxes" pattern="^[A-Z][A-Za-z]*$" name="firstname" id="firstname"
+              type="text" placeholder="First Name: SIAMAND" required>
+          <br>
+          <input class="inputboxes" pattern="^[A-Z][A-Za-z]*$" name="lastname" id="lastname"
+              type="text" placeholder="Last Name: ZANDI " required>
+          <br>
+          <input class="inputboxes" id="email" name="email" type="email" placeholder="Email: shoes@gmail.com" required>
+          <br>
+          <input class="inputboxes" id="address" name="address"
+              type="text" placeholder="Address: 123 Yonge St" required>
+          <br>
+          <datalist id="city">
+              <option value="Toronto">
+              <option value="Etobicoke">
+              <option value="Barrie">
+              <option value="Whitby">
+              <option value="Burlington">
+              <option value="Markham">
+              <option value="Vaughan">
+              <option value="Richmod Hill">
+            </datalist> 
+
+          <input class="inputboxes" list="city" id="citys" name="citys" placeholder="City" required>
+          <br>
+
+          <input class="inputboxes"  name="postalcode"
+              id="postalcode" type="text" placeholder="Postal Code: M2R1Y4" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" required>
+          <br>
+          <input class="inputboxes"  name="phonenumber"
+              id="phonenumber" type="text" placeholder="Phone Number: 647-969-7013" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          <br>
+
+      <hr class="line">
+
+      <label for="phoned">Would you like to be phoned?</label>
+      <input class="inpust"id="phoned" name="phoned" type="checkbox"><br>
+    
+        <ul>
+          <li><label for="question">Question</label>
+            <input id="question" name="Type" type="radio" required><br></li>
+          <li><label for="comment">Comment</label>
+            <input id="comment" name="Type" type="radio" required><br></li>
+          <li><label for="problem">Order Problem</label>
+            <input id="problem" name="Type" type="radio" required><br></li>
+        </ul>
+        <div id="choice" class="choice"></div>
+
+        <label for="msg">Message:</label> <br>
+        <textarea id="msg" name="msg" rows="10" type="text" required></textarea><br>
+
+        <input type="hidden" name="hidden" id="hidden" value="siamand zandi" required> <br>
+        <input type="submit" value="Submit Information">
+
+      </div>
+  </div>
+      </form>
+
+
+    <footer>
+        <div class="footer">
+            <br>
+            
+                <form class= "subscribe" action="https://formspree.io/xwknzanr" method="POST">
+                    <p class="footerstyle">Sign up for upcoming news</p>
+                    Name: <input type="text" name="name"><br>
+                    Email: <input type="email" name="_replyto"><br>
+                    <br><input type="submit" value="Subscribe">
+                  </form>
+            <p class="footerstyle">&copy; siamand zandi 104454178</p>
+                </div>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
